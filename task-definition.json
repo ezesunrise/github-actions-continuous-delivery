@@ -1,0 +1,29 @@
+{
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "inferenceAccelerators": [],
+    "containerDefinitions": [
+        {
+            "name": "default-container",
+            "image": "github-actions-continuous-delivery",
+            "resourceRequirements": null,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": "8080",
+                    "protocol": "tcp"
+                }
+                
+            ]
+        }
+    ],
+    "volumes": [],
+    "networkMode": "awsvpc",
+    "memory": "512",
+    "cpu": "256",
+    "executionRoleArn": "arn:aws:iam::385984815850:role/service-role/codebuild-ecs-project-test-service-role",
+    "family": "ecs-devops-sandbox-task-definition",
+    "taskRoleArn": "",
+    "placementConstraints": []
+}
