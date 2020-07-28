@@ -24,6 +24,6 @@
     "cpu": "256",
     "executionRoleArn": "arn:aws:iam::385984815850:role/service-role/codebuild-ecs-project-test-service-role",
     "family": "first-run-task-definition",
-    "taskRoleArn": "",
+    "taskRoleArn": "arn:aws:iam::385984815850:role/service-role/codebuild-ecs-project-test-service-role",
     "placementConstraints": []
 }
