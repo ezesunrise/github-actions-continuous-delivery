@@ -67,7 +67,7 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: .github/task-definitions.json
+        task-definition: task-definition.json
         container-name: sample-app
         image: ${{ steps.build-image.outputs.image }}
 
@@ -75,6 +75,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: sample-app-service
+        service: nginx-service
         cluster: default
         wait-for-service-stability: true
