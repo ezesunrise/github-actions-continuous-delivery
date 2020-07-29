@@ -5,7 +5,7 @@
     "inferenceAccelerators": [],
     "containerDefinitions": [
         {
-            "name": "default-container",
+            "name": "sample-app",
             "image": "github-actions-continuous-delivery",
             "resourceRequirements": null,
             "essential": true,
