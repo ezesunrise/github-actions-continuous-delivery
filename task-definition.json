@@ -22,8 +22,8 @@
     "networkMode": "awsvpc",
     "memory": "512",
     "cpu": "256",
-    "executionRoleArn": "arn:aws:iam::385984815850:role/service-role/codebuild-ecs-project-test-service-role",
+    "executionRoleArn": "arn:aws:iam::385984815850:role/service-role/AWSServiceRoleForECS",
     "family": "first-run-task-definition",
-    "taskRoleArn": "arn:aws:iam::385984815850:role/service-role/codebuild-ecs-project-test-service-role",
+    "taskRoleArn": "arn:aws:iam::385984815850:role/service-role/AWSServiceRoleForECS",
     "placementConstraints": []
 }
